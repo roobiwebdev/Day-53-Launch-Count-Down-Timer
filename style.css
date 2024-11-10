@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "Red Hat Text", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #221C2B;
+    position: relative;
+    user-select: none;
+    overflow: hidden;
+
+}
+
+.bg{
+    position: absolute;
+    z-index: -1;
+}
+
+
+section{
+    width: 48%;
+    text-align: center;
+    @media (max-width: 50em) {
+        width: 89%;
+    }
+}
+
+section h2{
+    margin-top: 9.2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    /* font-weight: 500; */
+    letter-spacing: 6.5px;
+     @media (max-width: 50em) {
+        width: 95%;
+        margin: 9rem auto;
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+        line-height: 40px;
+    }
+}
+
+.times{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6.6rem;
+    @media (max-width: 50em) {
+        margin-top: -4rem;
+    }
+}
+
+.times #days,#hrs,#mins,#secs{
+    width: 150px;
+    height: 140px;
+    background-color: #2C2D45;
+    color: #D54F6E;
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @media (max-width: 50em) {
+        width: 70px;
+        height: 70px;
+        /* margin-top: ; */
+        font-size: 2.7rem;
+    }
+}
+
+.label{
+    margin-top: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #706F84;
+
+      @media (max-width: 50em) {
+        font-size: .4rem;
+        font-weight: bolder;
+        margin-top: 1rem;
+    }
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15.6rem;
+
+    @media (max-width: 50em) {
+        font-size: 5px;
+        margin-top: 16rem;
+    }
+}
+
+.socials li{
+    list-style: none;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+
+footer{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+footer img{
+    width: 100%;
+     @media (max-width: 50em) {
+        width: 200%;
+       height: 200px;
+    }
+}
